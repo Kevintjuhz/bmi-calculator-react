@@ -1,0 +1,37 @@
+@use "../variables" as v;
+
+.radio-button {
+  width: 31px;
+  height: 31px;
+  background: v.$color_pure_white;
+  border: 1px solid v.$color_borders;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  border-radius: 100%;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+
+.radio-button:hover {
+  border: 1px solid v.$color_blue;
+  transition: ease-in-out border 0.2s;
+}
+
+.radio-button.active {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  background: v.$color_blue;
+  border: solid 8px rgba(52, 95, 246, 0.15);
+  background-clip: padding-box;
+
+  outline: none;
+  transition: ease-in-out border 0.2s;
+}

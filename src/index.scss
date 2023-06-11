@@ -1,0 +1,55 @@
+@use './variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0 24px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: v.$semi_bold;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: v.$semi_bold;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: v.$semi_bold;
+  line-height: 110%;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: v.$semi_bold;
+    line-height: 110%;
+}
+
+p {
+  font-weight: v.$regular;
+  line-height: 150%;
+}
+
+p .medium-text {
+  font-size: 18px;
+}
+
+p .bold-text {
+  font-weight: v.$semi_bold;
+}
+
+p .small-text {
+    font-size: 14px;
+}
