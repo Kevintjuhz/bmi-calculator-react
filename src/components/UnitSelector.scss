@@ -1,0 +1,17 @@
+.select-unit {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+  justify-content: start;
+}
+
+.select-unit div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.select-unit div label.unit-label {
+  margin-left: 18px;
+}

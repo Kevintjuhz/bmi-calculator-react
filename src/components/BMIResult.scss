@@ -1,0 +1,8 @@
+@use "../variables" as v;
+
+.bmi-result {
+  background: linear-gradient(90deg, v.$color_blue 0%, #587DFF 100%);
+  border-radius: 16px 99px 99px 16px;
+  padding: 32px;
+  color: v.$color_pure_white;
+}

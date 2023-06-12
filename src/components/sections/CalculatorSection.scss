@@ -1,16 +1,20 @@
+@use "../../variables" as v;
+
 .calculator-section {
   width: 100%;
   max-width: 1276px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .section-gradient {
   background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
   border-radius: 0 0 35px 35px;
   position: absolute;
-  width: 978px;
+  width: 100%;
+  max-width: 978px;
   height: 737px;
   z-index: 0;
   left: 24px;
@@ -19,18 +23,49 @@
 .calculator-wrapper {
   width: 100%;
   max-width: 1160px;
+  align-items: start;
   padding-top: 75px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-flex {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .calculator-text-wrapper {
-  margin-top: 127px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 35px;
+  width: 100%;
   max-width: 564px;
+}
+
+.calculator-text-wrapper h1 {
+  letter-spacing: -0.05em;
+  width: 100%;
+  max-width: 564px;
+  align-self: stretch;
+}
+
+.calculator-p {
+  max-width: 465px;
+  color: v.$color_dark_electric_blue;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .logo {

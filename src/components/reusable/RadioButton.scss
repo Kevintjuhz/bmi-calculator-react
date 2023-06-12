@@ -1,10 +1,13 @@
-@use "../variables" as v;
+@use "../../variables" as v;
 
-.radio-button {
+.custom-radio {
   width: 31px;
   height: 31px;
   background: v.$color_pure_white;
   border: 1px solid v.$color_borders;
+
+  display: inline-block;
+  position: relative;
 
   flex: none;
   order: 0;
@@ -18,12 +21,23 @@
 
 }
 
-.radio-button:hover {
+.radio-label {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.custom-radio:hover {
   border: 1px solid v.$color_blue;
   transition: ease-in-out border 0.2s;
 }
 
-.radio-button.active {
+.radio-input {
+  margin: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.radio-input:checked + span {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -34,4 +48,8 @@
 
   outline: none;
   transition: ease-in-out border 0.2s;
+}
+
+.radio-input:checked + span:after {
+  opacity: 1;
 }

@@ -42,14 +42,26 @@ p {
   line-height: 150%;
 }
 
-p .medium-text {
-  font-size: 18px;
+.medium-text {
+  font-size: 16px;
 }
 
-p .bold-text {
+.bold-text {
   font-weight: v.$semi_bold;
 }
 
-p .small-text {
-    font-size: 14px;
+.small-text {
+  font-size: 14px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
